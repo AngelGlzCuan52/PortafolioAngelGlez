@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo calculadora</title>
+</head>
+	<center>
+<h1> CALCULADORA</h1>  
+	<input type="text" id="n11" placeholder="n1">
+<input type="text" id="n22" placeholder="n2">
+
+<select id="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<button id="calcular2">Calcular</button>
+
+<output id="r2"></output> 
+<script>
+    document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+        if(op2 == '+'){
+            r = n1 + n2;
+        }else if( op2 == '-'){
+            r = n1 - n2;
+        }else if(op2 == '*'){
+            r = n1 * n2;
+        }else if(op2 == '/'){
+            r = n1 / n2;
+        }
+        document.querySelector('#r2').innerHTML = r;
+    });
+</script>
+		<br>
+		<br>
+	
+	<input type="text" id="n1" placeholder="n1">
+<input type="text" id="n2" placeholder="n2">
+		
+<button id="suma">+</button>
+<button id="resta">-</button>
+<button id="multiplicacion">*</button>
+<button id="division">/</button>
+<button id="calcular">Calcular</button>
+
+<output id="r"></output> 
+<script>
+    let op;
+    document.querySelector('#suma').addEventListener('click', () =>{
+        op = '+';
+    });
+    document.querySelector('#resta').addEventListener('click', () =>{
+        op = '-';
+    });
+    document.querySelector('#multiplicacion').addEventListener('click', () =>{
+        op = '*';
+    });
+    document.querySelector('#division').addEventListener('click', () =>{
+        op = '/';
+    });
+
+    document.querySelector('#calcular').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n1').value);
+        const n2 = parseInt(document.querySelector('#n2').value);
+        //const op = document.querySelector('#op').value;
+        let r;
+        if(op == '+'){
+            r = n1 + n2;
+        }else if( op == '-'){
+            r = n1 - n2;
+        }else if(op == '*'){
+            r = n1 * n2;
+        }else if(op == '/'){
+            r = n1 / n2;
+        }
+        document.querySelector('#r').innerHTML = r;
+    });
+	
+
+</script>
+		
+		<br>
+		<script type="text/javascrpt">
+		var d = new Date()
+		var time = d.getHours()
+		if(time<10)
+		{
+		document.write("<b>uno</b>");
+		}
+		else if (time>=10&&time<16)
+		{
+		document.write("<b>dos</b>");
+		}
+		else
+		{
+		document.write("<b>tres</b>");
+		}
+		
+		</script>
+		
+	</center>
+<body>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" >
+<title>Mi pagina</title>
+	<script type="application/javascript">
+    function setBodyAttr(attr, value){
+      if (document.body) eval('document.body.'+attr+'="'+value+'"');
+      else notSupported();
+    }
+		
+    </script>
+	<center>
+	<script language="javascript">
+	var nombre= prompt("Porfavor escribe tu nombre");
+		document.write("Hola ");
+		document.write(nombre);
+		document.write(" Bienvenid@, disfruta tu estadia en la pagina")
+	</script>
+		<br>
+		<audio src="the-legend-of-zelda-fairy-fountain-vect-lofi-remix.mp3" controls>  </audio>
+	</center>
+</head>
+
+<body>
+	
+	<center><h1 style="background-color: aquamarine">Tienda Mi tazita</h1></center>
+	<p></p>
+	<center>
+	<p>Esta es una tienda en linea de venta de productos personalizados y de decoración</p>
+	<p></p>
+	<h1 style="background: #8FEBB6">Tablas de precios</h1>
+		
+	<table class="default" border="2">
+  <tr>
+    <th style="background: #E84A4D">Objeto</th>
+    <th style="background: #E84A4D">Precio</th>
+  </tr>
+  <tr>
+    <td style="background: #42BBF5">Taza blanca</td>
+    <td style="background: #57E056">$100&nbsp;</td>
+  </tr>
+	  <tr>
+    <td style="background: #42BBF5">Taza magica</td>
+    <td style="background: #57E056">$150&nbsp;</td>
+  </tr>
+	<tr>
+    <td style="background: #42BBF5">Taza de parejas</td>
+    <td style="background: #57E056">$150&nbsp;</td>
+  </tr>
+	  <tr>
+    <td style="background: #42BBF5">Tarro de cerveza</td>
+    <td style="background: #57E056">$150</td>
+  </tr>
+	<td style="background: #42BBF5">Termo deportivo</td>
+    <td style="background: #57E056">$130</td>
+</table>
+	<h1 style="background: #8FEBB6">links en modo de lista para ver diseños de decoraciones:</h1>
+	<p></p>
+	<ul type="disc">
+	<li><a href="https://www.pinterest.com.mx/monicamartell/sublimaci%C3%B3n-tazas/" style="color: #225FC9">Pagina de ideas para diseños de tazas</a></li>
+	<p></p>
+	<li><a href="https://sublimonchis.com/plantillas-para-sublimacion/plantillas-tazas/" style="color: #225FC9">Pagina con diseños"sublimuchis"</a></li>
+	<p></p>
+	<li><a href="https://www.pinterest.com.mx/pin/552535448031998776/" style="color: #225FC9">Video de como funcionan las tazas magicas</a></li>
+	<p></p>
+	<li><a href="https://www.pinterest.es/beleneizaguirre/hama-dise%C3%B1os/" style="color: #225FC9">Diseños de decoracion con hama beads</a></li>
+	</ul>
+	<h1 style="background: #8FEBB6">Fotos de productos:</h1>	
+	<img src="imagen-1.jpg"> 
+		
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/KPhzNywPQ5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+	<h1 style="background-color: aquamarine">CALCULADORA</h1>
+		<p>utiliza esta calculadora para calcular el precio de tus tazas a mayoreo</p>
+        </center>  
+	<center>
+	<input type="text" id="n11" placeholder="n1">
+<input type="text" id="n22" placeholder="n2">
+
+<select id="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<button id="calcular2">Calcular</button>
+
+<output id="r2"></output> 
+<script>
+    document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+        if(op2 == '+'){
+            r = n1 + n2;
+        }else if( op2 == '-'){
+            r = n1 - n2;
+        }else if(op2 == '*'){
+            r = n1 * n2;
+        }else if(op2 == '/'){
+            r = n1 / n2;
+        }
+        document.querySelector('#r2').innerHTML = r;
+    });
+</script>
+		
+		
+	<h1 style="background: #8FEBB6">Para solicitar precios a mayoreo favor de contactar con la pagina</h1>	
+	<p>Selecciona el tipo de objeto que quieres cotizar:</p>
+		<p></p>
+	<form action="">
+	<select name="objeto">
+	<option value="blanca">Taza blanca</option>
+	<option value="magica">Taza magica</option>
+	<option value="parejas">Taza de parejas</option>
+	<option value="cerveza">Tarro de cerveza</option>
+	<option value="deportivo">Termo deportivo</option>
+	</select>
+		<p></p>
+	</form>
+		<p></p>
+		<p>selecciona la cantidad de taza, tarro o termo:</p>
+	<input type="checkbox" name="tamaño" value="10" /> 10 Objetos
+	<input type="checkbox" name="tamaño" value="15" /> 15 Objetos
+	<input type="checkbox" name="tamaño" value="20" /> 20 Objetos
+	<input type="checkbox" name="tamaño" value="25" /> 25 Objetos
+	<input type="checkbox" name="tamaño" value="30" /> 30 o Mas objetos
+	
+		<p></p>
+	<form action="">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="user_name" />
+
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" id="mail" name="user_email" />
+ 
+	<p></p>
+    <label for="msg">Mensaje:</label>
+    <textarea rows="10" cols="30" id="msg" name="user_message"></textarea>
+	
+		<p class="button"> </p>
+  <button type="submit">Envíe su mensaje</button>
+		<br>
+			</form>
+		<p> Esta pagina fue elaborada para el uso de practica de HTML por parte de la universidad UACJ</p>
+		
+		<div id="container" style="width:500px">
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">Pagina oficial de la uacj</h1></div>
+
+<div id="content" style="background-color:#EEEEEE;height:200px;width:500px;float:left;" ><iframe src="https://www.uacj.mx/" style="height:200px;width:500px"></iframe> </div>
+</div>
+		
+	
+	</center>
+		</body>
+    </html>
